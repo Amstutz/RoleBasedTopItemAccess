@@ -20,8 +20,8 @@ class ilRoleBasedTopItemAccessPlugin extends ilUserInterfaceHookPlugin {
         $this->provider_collection->setMainBarProvider(new RoleBasedProvider($DIC, $this));
         //$this->provider_collection->setMetaBarProvider(new MetaBarProvider($DIC, $this));
         //$this->provider_collection->setNotificationProvider(new NotificationProvider($DIC, $this));
-       // $this->provider_collection->setModificationProvider(new ModificationProvider($DIC, $this));
-       // $this->provider_collection->setToolProvider(new ToolProvider($DIC, $this));
+        //$this->provider_collection->setModificationProvider(new ModificationProvider($DIC, $this));
+        //$this->provider_collection->setToolProvider(new ToolProvider($DIC, $this));
     }
 
 	/**

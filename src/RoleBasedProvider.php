@@ -57,7 +57,7 @@ class RoleBasedProvider extends AbstractStaticMainMenuPluginProvider {
 	 */
 	public function provideTypeInformation(): TypeInformationCollection {
 		$c = new TypeInformationCollection();
-		$c->add(new TypeInformation(RoleEntryType::class, "Role Based Access for Studmed",new RoleEntryRenderer(),
+		$c->add(new TypeInformation(RoleEntryType::class, "Global Role Based Access",new RoleEntryRenderer(),
 				new RoleEntryType($this->if->identifier("parent_role_entry")))
 		);
 		return $c;
