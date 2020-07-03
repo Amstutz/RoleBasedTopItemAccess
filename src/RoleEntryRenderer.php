@@ -24,7 +24,7 @@ class RoleEntryRenderer extends TopParentItemRenderer {
 		$global_roles_of_user = $DIC->rbac()->review()->assignedGlobalRoles($DIC->user()->getId());
 
 		if(is_array($global_roles_with_access) && count(array_intersect($global_roles_of_user,$global_roles_with_access))){
-			return parent::getComponentForItem($item);
+			return parent::getComponentWithContent($item);
 		}
 		return $this->ui_factory->legacy("");
 	}
